@@ -9,27 +9,30 @@
 }
 
 @import "fonts";
+@import "default";
 
-body{
-	font-size: 20px;
-	display: flex;
-}
+@import "header";
 
-p{
-	font-size: 50px;
-	font-family: 'RobotoMono-Regular';
-}
+// body{
+// 	font-size: 20px;
+// 	display: flex;
+// }
 
-span{
-	font-size: 20px;
-	@media (max-width: 767px){
-		font-size: 15px;
-	}
-}
+// p{
+// 	font-size: 50px;
+// 	font-family: 'RobotoMono-Regular';
+// }
 
-div{
-	font-size: 30px;
-	@media (max-width: 767px){
-		font-size: 20px;
-	}
-}
+// span{
+// 	font-size: 20px;
+// 	@media (max-width: 767px){
+// 		font-size: 15px;
+// 	}
+// }
+
+// div{
+// 	font-size: 30px;
+// 	@media (max-width: 767px){
+// 		font-size: 20px;
+// 	}
+// }
