@@ -1,0 +1,19 @@
+@import "https://unpkg.com/swiper/swiper-bundle.min.css";
+
+.swiper-container{
+	width: 100%;
+	height: 404px;
+	margin-top: 50px;
+	border-radius: 20px;
+
+	.swiper-button-prev{
+		color: #FFF;
+	}
+	.swiper-button-next{
+		color: #FFF;
+	}
+
+	.swiper-pagination-bullet{
+		background-color: #FFF;
+	}
+}
