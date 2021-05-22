@@ -1,0 +1,26 @@
+.photogallery-container{
+	margin-top: 100px;
+}
+
+.photo-category{
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+
+	.category-group{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.photo-category-img{
+			width: 262px;
+			height: 262px;
+			border-radius: 20px;
+		}
+		.category-caption{
+			margin-top: 15px;
+			font-size: 24px;
+			line-height: 32px;
+			color: #2C3E50;
+		}
+	}	
+}

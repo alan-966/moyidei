@@ -1,0 +1,23 @@
+.info-comand-about-container{
+	margin-top: 100px;
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: space-between;
+
+	.info-comand-container{
+		flex: 1;
+	}
+	.info-about-container{
+		flex: 1;
+	}
+	.info{
+		margin-top: 20px;
+		font-size: 18px;
+		line-height: 24px;
+		color: #2C3E50;
+		white-space: normal;
+	}
+	.more-btn{
+		margin-top: 15px;
+	}
+}

@@ -1,0 +1,40 @@
+footer{
+	position: relative;
+	background: #2C3E50;
+
+	.footer-container{
+		max-width: 1140px; // 1140px
+		margin: 0px auto;
+		display: flex;
+		justify-content: space-between;
+
+		.footer-column{
+			margin-top: 32px;
+			background-color: red;
+			span{
+				font-size: 24px;
+				line-height: 32px;
+				color: #FFF;
+			}
+			.social-list{
+				margin-top: 8px;
+				display: flex;
+				justify-content: space-between;
+				img{
+					width: 52px;
+					height: 52px;
+				}
+			}
+			.footer-menu{
+				li{
+					margin-bottom: 25px;
+					a{
+						color: #FFF;
+						font-size: 24px;
+						line-height: 32px
+					}
+				}
+			}
+		}
+	}
+}

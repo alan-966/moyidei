@@ -2,17 +2,12 @@ header{
 	position: relative;
 	background: #2C3E50;
 	background: linear-gradient(to right, #2980B9, #2C3E50);
-	// background-color: #2980B9;
 }
 
 .container{
 	max-width: 1140px; // 1140px
 	margin: 0px auto;
 	display: flex;
-	// padding: 0px 150px;
-	// padding-left: 150px;
-	// padding-right: 150px;
-	// justify-content: center;
 	align-items: flex-end;
 
 	.header_logo{
