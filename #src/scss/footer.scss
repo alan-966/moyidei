@@ -10,7 +10,7 @@ footer{
 
 		.footer-column{
 			margin-top: 32px;
-			background-color: red;
+			// background-color: red;
 			span{
 				font-size: 24px;
 				line-height: 32px;
@@ -34,6 +34,25 @@ footer{
 						line-height: 32px
 					}
 				}
+			}
+			.footer-btn{
+				display: inline-block;
+				border-radius: 4px;
+				font-size: 24px;
+				line-height: 32px;
+				color: #FFFFFF;
+				padding: 9px 36px;
+				background-color: #2980B9;
+				margin-top: 15px;
+			}
+			.first-row{
+				display: flex;
+				flex-direction: column;
+			}
+			.second-row{
+				display: flex;
+				flex-direction: column;
+				margin-top: 36px;
 			}
 		}
 	}
