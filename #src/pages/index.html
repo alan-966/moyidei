@@ -7,7 +7,15 @@
 	<title>Мои идеи - твое воплощение</title>
 </head>
 <body>
-	@@include('_header.html')
+	@@include('_header.html', {
+		"logo": "img/Logo.png",
+		"socials": {
+			"fb": "img/svg/facebook.svg",
+			"in": "img/svg/instagram.svg",
+			"vk": "img/svg/vk.svg",
+			"yt": "img/svg/youtube.svg",
+		}
+	})
 	<main class="main-wrapper">
 		@@include('_slider.html')
 		@@include('_news_block.html')
@@ -15,7 +23,14 @@
 		@@include('_info-comand-about.html')
 		
 	</main>
-	@@include('_footer.html')
+	@@include('_footer.html', {
+		"socials": {
+			"fb": "img/svg/facebook.svg",
+			"in": "img/svg/instagram.svg",
+			"vk": "img/svg/vk.svg",
+			"yt": "img/svg/youtube.svg",
+		}
+	})
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<script src="js/script.min.js"></script>
 </body>
