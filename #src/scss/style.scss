@@ -11,12 +11,16 @@
 @import "fonts";
 @import "default";
 
+//main
 @import "header";
 @import "slider";
 @import "news_block";
 @import "photogallery";
 @import "info-comand-about";
 @import "footer";
+
+//news
+@import "news_list";
 
 .main-wrapper{
 	max-width: 1140px; // 1140px
