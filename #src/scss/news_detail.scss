@@ -29,10 +29,12 @@
 	}
 	.news-detail-img-wrapper{
 		margin-top: 20px;
+		height: 398px;
 		.news-detail-img{
-			height: 398px;
+			height: 100%;
 			width: 100%;
 			border-radius: 20px;
+			object-fit: cover;
 		}
 	}
 	.news-detail-text{

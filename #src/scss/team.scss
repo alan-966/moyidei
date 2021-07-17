@@ -12,8 +12,12 @@
 				flex-direction: column;
 				align-items: center;
 				.team-photo-wrapper{
+					// background-color: red;
+					height: 383px;
 					.team-photo{
-						height: 383px;
+						object-fit: cover;
+						height: 100%;
+						width: 100%;
 					}
 				}
 				.member-name{
