@@ -1,4 +1,34 @@
 .gallery-category-container{
 	margin-top: 50px;
 	margin-bottom: 50px;
+	.title-row{
+		display: flex;
+		flex-direction: row;
+		align-items: flex-end;
+		// background-color: red;
+		.subtitle{
+			margin-left: 30px;
+		}
+	}
+	.gallery-grid{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 30px;
+		.gallery-grid-item{
+			margin-top: 20px;
+			// border: 2px dashed red;
+			.gallery-photo-wrapper{
+				height: 150px;
+				text-align: center;
+				background-color: rgba(0, 0, 0, 0.75);
+				border-radius: 4px;
+				.gallery-photo{
+					object-fit: contain;
+					// height: 100%;
+					height: 150px;
+					width: 100%;
+				}
+			}
+		}
+	}
 }

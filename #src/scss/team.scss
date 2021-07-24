@@ -2,39 +2,37 @@
 	margin-top: 50px;
 	margin-bottom: 50px;
 	.team-grid{
-		.team-grid-body{
-			display: grid;
-			grid-template-columns: repeat(3, 1fr);
-			.team-grid-item{
-				margin-top: 20px;
-				// border: 2px dashed red;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				.team-photo-wrapper{
-					// background-color: red;
-					height: 383px;
-					.team-photo{
-						object-fit: cover;
-						height: 100%;
-						width: 100%;
-					}
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		.team-grid-item{
+			margin-top: 20px;
+			// border: 2px dashed red;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			.team-photo-wrapper{
+				// background-color: red;
+				height: 383px;
+				.team-photo{
+					object-fit: cover;
+					height: 100%;
+					width: 100%;
 				}
-				.member-name{
-					margin-top: 10px;
-					font-weight: bold;
-					font-size: 24px;
-					line-height: 32px;
-					text-transform: uppercase;
-					color: #2C3E50;
-				}
-				.member-discription{
-					margin-top: 5px;
-					text-align: center;
-					font-size: 18px;
-					line-height: 24px;
-					color: #2C3E50;
-				}
+			}
+			.member-name{
+				margin-top: 10px;
+				font-weight: bold;
+				font-size: 24px;
+				line-height: 32px;
+				text-transform: uppercase;
+				color: #2C3E50;
+			}
+			.member-discription{
+				margin-top: 5px;
+				text-align: center;
+				font-size: 18px;
+				line-height: 24px;
+				color: #2C3E50;
 			}
 		}
 	}
