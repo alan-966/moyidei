@@ -2,16 +2,16 @@
 	margin-top: 50px;
 	margin-bottom: 50px;
 	.team-grid{
+		margin-top: 20px;
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 30px;
 		.team-grid-item{
-			margin-top: 20px;
 			// border: 2px dashed red;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 			.team-photo-wrapper{
-				// background-color: red;
 				height: 383px;
 				.team-photo{
 					object-fit: cover;
