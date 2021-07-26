@@ -34,16 +34,33 @@
 .popup__content{
 	background-color: #fff;
 	color: #000;
-	max-width: 800px;
-	padding: 30px;
+	max-width: 60%;
+	max-height: 100%;
+	/*border: 2px dashed red;*/
 	position: relative;
 	transition: all 0.8s ease 0s;
 	opacity: 0;
 	transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+	picture{
+		display: block;
+		height: 80vh;
+	}
+}
+
+.lock{
+	overflow: hidden;
+}
+
+.popup__photo{
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
 }
 
 .popup__close{
 	position: absolute;
 	right: 10px;
 	top: 10px;
+	color: #FFF;
+	font-size: 20px;
 }

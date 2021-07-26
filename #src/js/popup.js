@@ -6,8 +6,10 @@ let unlock = true;
 
 const timeout = 800;
 
-if (popupLinks.length > 0) {
-	for (let index = 0; index < popupLinks.length; index++) {
+if (popupLinks.length > 0)
+{
+	for (let index = 0; index < popupLinks.length; index++)
+	{
 		const popupLink = popupLinks[index];
 		popupLink.addEventListener('click', function (e) {
 			const popupName = popupLink.getAttribute('href').replace('#', '');
@@ -19,8 +21,10 @@ if (popupLinks.length > 0) {
 }
 
 const popupCloseIcon = document.querySelectorAll('.close-popup');
-if (popupCloseIcon.length > 0) {
-	for (let index = 0; index < popupCloseIcon.length; index++) {
+if (popupCloseIcon.length > 0)
+{
+	for (let index = 0; index < popupCloseIcon.length; index++)
+	{
 		const el = popupCloseIcon[index];
 		el.addEventListener('click', function (e) {
 			popupClose(el.closest('.popup'));
@@ -29,36 +33,35 @@ if (popupCloseIcon.length > 0) {
 	}
 }
 
-function popupOpen(currentPopup) {
-	if (currentPopup && unlock) {
+function popupOpen(currentPopup)
+{
+	if (currentPopup && unlock)
+	{
 		const popupActive = document.querySelector('.popup.open');
-		if (popupActive) {
-			popupClose(popupActive, false);
-		} else {
-			bodyLock();
-		}
+		if (popupActive) popupClose(popupActive, false);
+		else bodyLock();
 		currentPopup.classList.add('open');
 		currentPopup.addEventListener('click', function (e) {
-			if (!e.target.closest('.popup__content')) {
+			if (!e.target.closest('.popup__content'))
 				popupClose(e.target.closest('.popup'));
-			}
-		})
+		});
 	}
 }
 
-function popupClose(popupActive, doUnlock = true) {
-	if (unlock) {
+function popupClose(popupActive, doUnlock = true)
+{
+	if (unlock)
+	{
 		popupActive.classList.remove('open');
-		if (doUnlock) {
-			bodyUnLock();
-		}
+		if (doUnlock) bodyUnLock();
 	}
 }
 
-function bodyLock() {
+function bodyLock()
+{
 	const lockPaddingValue = window.innerWidth - body.offsetWidth + 'px';
-	// console.log(lockPaddingValue);
-	for (let index = 0; index < lockPadding.length; index++) {
+	for (let index = 0; index < lockPadding.length; index++)
+	{
 		const el = lockPadding[index];
 		el.style.paddingRight = lockPaddingValue;
 	}
@@ -71,13 +74,24 @@ function bodyLock() {
 	}, timeout);
 }
 
-function bodyUnLock() {
+function bodyUnLock()
+{
 	setTimeout(function () {
-		for (let index = 0; index < lockPadding.length; index++) {
+		for (let index = 0; index < lockPadding.length; index++)
+		{
 			const el = lockPadding[index];
 			el.style.paddingRight = '0px';
 		}
 		body.style.paddingRight = '0px';
 		body.classList.remove('lock');
-	}, timeout)
+	}, timeout);
 }
+
+document.addEventListener('keydown', function (e) {
+	if (e.which === 27)
+	{
+		const popupActive = document.querySelector('.popup.open');
+		popupClose(popupActive);
+	}
+});
+

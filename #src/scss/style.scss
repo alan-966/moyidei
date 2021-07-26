@@ -38,6 +38,18 @@
 //popup
 @import "popup";
 
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+header,footer{
+	flex: 0 0 auto;
+}
+main{
+	flex: 1 0 auto;
+}
+
 .main-wrapper{
 	max-width: 1140px; // 1140px
 	margin: 0px auto;
