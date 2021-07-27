@@ -12,9 +12,16 @@ if (popupLinks.length > 0)
 	{
 		const popupLink = popupLinks[index];
 		popupLink.addEventListener('click', function (e) {
+			const currImgTag = popupLink.querySelector('.gallery-photo');
+			let currImg = null;
+			if(currImgTag && currImgTag.hasAttribute('src'))
+			{
+				currImg = currImgTag.getAttribute('src');
+			}
+
 			const popupName = popupLink.getAttribute('href').replace('#', '');
 			const currentPopup = document.getElementById(popupName);
-			popupOpen(currentPopup);
+			popupOpen(currentPopup, currImg);
 			e.preventDefault();
 		});
 	}
@@ -33,13 +40,28 @@ if (popupCloseIcon.length > 0)
 	}
 }
 
-function popupOpen(currentPopup)
+function popupOpen(currentPopup, currImg)
 {
 	if (currentPopup && unlock)
 	{
 		const popupActive = document.querySelector('.popup.open');
 		if (popupActive) popupClose(popupActive, false);
 		else bodyLock();
+
+		if (currImg)
+		{
+			const popupSource = currentPopup.querySelector('source');
+			const popupImg = currentPopup.querySelector('.popup__photo');
+			// jpg,png,svg,gif,ico
+			const dotIndex = currImg.lastIndexOf('.');
+			const refactorImg = dotIndex > 0
+				? currImg.slice(0, dotIndex) + '.webp'
+				: currImg;
+
+			popupSource.setAttribute('srcset', refactorImg);
+			popupImg.setAttribute('src', currImg);
+		}
+		
 		currentPopup.classList.add('open');
 		currentPopup.addEventListener('click', function (e) {
 			if (!e.target.closest('.popup__content'))
