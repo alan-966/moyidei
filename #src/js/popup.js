@@ -4,7 +4,7 @@ const lockPadding = document.querySelectorAll('.lock-padding');
 
 let unlock = true;
 
-const timeout = 800;
+const timeout = 300;
 
 if (popupLinks.length > 0)
 {
@@ -12,7 +12,7 @@ if (popupLinks.length > 0)
 	{
 		const popupLink = popupLinks[index];
 		popupLink.addEventListener('click', function (e) {
-			const currImgTag = popupLink.querySelector('.gallery-photo');
+			const currImgTag = popupLink.querySelector('.gallery_photo');
 			let currImg = null;
 			if(currImgTag && currImgTag.hasAttribute('src'))
 			{
@@ -75,7 +75,7 @@ function popupClose(popupActive, doUnlock = true)
 	if (unlock)
 	{
 		popupActive.classList.remove('open');
-		if (doUnlock) bodyUnLock();
+		if (doUnlock) bodyUnLock(popupActive);
 	}
 }
 
@@ -96,9 +96,19 @@ function bodyLock()
 	}, timeout);
 }
 
-function bodyUnLock()
+function bodyUnLock(popupActive)
 {
 	setTimeout(function () {
+		const popupSource = popupActive.querySelector('source');
+		const popupPhoto = popupActive.querySelector('.popup__photo');
+		if (popupPhoto && popupSource &&
+			popupPhoto.hasAttribute('src') &&
+			popupSource.hasAttribute('srcset'))
+		{
+			popupSource.setAttribute('srcset', '');
+			popupPhoto.setAttribute('src', '');
+		}
+
 		for (let index = 0; index < lockPadding.length; index++)
 		{
 			const el = lockPadding[index];

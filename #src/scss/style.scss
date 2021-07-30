@@ -33,7 +33,7 @@
 @import "team";
 
 //photogallery
-@import "gallery_category";
+@import "gallery";
 
 //popup
 @import "popup";
@@ -52,6 +52,7 @@ main{
 
 .main-wrapper{
 	max-width: 1140px; // 1140px
+	width: 100%;
 	margin: 0px auto;
 }
 
