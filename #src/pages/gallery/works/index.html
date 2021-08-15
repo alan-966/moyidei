@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../css/style.min.css">
+	<title>Работы</title>
+</head>
+<body>
+	@@include('../../_header.html', {
+		"logo": "../../img/Logo.png",
+		"socials": {
+			"fb": "../../img/svg/facebook.svg",
+			"in": "../../img/svg/instagram.svg",
+			"vk": "../../img/svg/vk.svg",
+			"yt": "../../img/svg/youtube.svg",
+		}
+	})
+	<main class="main-wrapper">
+		@@include("../../_gallery_works.html")
+	</main>
+	@@include('../../_footer.html', {
+		"socials": {
+			"fb": "../../img/svg/facebook.svg",
+			"in": "../../img/svg/instagram.svg",
+			"vk": "../../img/svg/vk.svg",
+			"yt": "../../img/svg/youtube.svg",
+		}
+	})
+	@@include("../../_popup.html", {
+		"id": "image-popup",
+	})
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="../../js/script.min.js"></script>
+</body>
+</html>
