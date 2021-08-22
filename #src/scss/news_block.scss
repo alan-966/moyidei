@@ -51,6 +51,7 @@
 			object-fit: cover;
 		}
 	}
+	transition: all .3s ease;
 }
 
 .short-post{
@@ -59,6 +60,14 @@
 	padding: 10px 15px;
 	border-radius: 20px;
 	border: 1px solid #C4C4C4;
+	transition: all .3s ease;
+}
+
+.long-post:hover,
+.short-post:hover{
+	opacity: 0.75;
+	box-shadow: 0px 5px 10px 0px rgba(44, 62, 80, 0.75);
+	transition: all .3s ease;
 }
 
 .news-block-post{
