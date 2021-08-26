@@ -24,6 +24,7 @@
 				height: 100%;
 				object-fit: cover;
 				border-radius: 20px;
+				transition: all .3s ease;
 			}
 		}
 		.category_caption{
@@ -32,6 +33,12 @@
 			line-height: 32px;
 			color: #2C3E50;
 		}
-	}	
+	}
+	.category_group:hover{
+		.photo_category_img{
+			filter: brightness(80%);
+			transition: all .3s ease;
+		}
+	}
 }
 

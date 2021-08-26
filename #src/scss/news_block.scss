@@ -65,8 +65,8 @@
 
 .long-post:hover,
 .short-post:hover{
-	opacity: 0.75;
-	box-shadow: 0px 5px 10px 0px rgba(44, 62, 80, 0.75);
+	filter: brightness(80%);
+	box-shadow: 0px 2px 10px 0px rgba(44, 62, 80, 0.75);
 	transition: all .3s ease;
 }
 

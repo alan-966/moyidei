@@ -77,5 +77,11 @@ main{
 	padding: 7px 38px;
 	font-size: 18px;
 	color: #2C3E50;
+	transition: all .3s ease;
+}
+
+.btn:hover{
+	border: 1px solid #2C3E50;
+	transition: all .3s ease;
 }
 
