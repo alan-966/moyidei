@@ -53,7 +53,9 @@ function popupOpen(currentPopup, currImg)
 			const popupSource = currentPopup.querySelector('source');
 			const popupImg = currentPopup.querySelector('.popup__photo');
 			// jpg,png,svg,gif,ico
-			const dotIndex = currImg.lastIndexOf('.');
+			const dotIndex = currImg.startsWith('http')
+				? 0
+				: currImg.lastIndexOf('.');
 			const refactorImg = dotIndex > 0
 				? currImg.slice(0, dotIndex) + '.webp'
 				: currImg;
