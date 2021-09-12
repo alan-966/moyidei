@@ -2,7 +2,63 @@
 	margin-top: 100px;
 	margin-bottom: 50px;
 }
-
 .accordion_wrapper{
-	
+	// margin-top: 20px;
+	.accordion_item{
+		margin-top: 20px;
+		padding: 10px 15px;
+		border-radius: 20px;
+		border: 1px solid #C4C4C4;
+		cursor: pointer;
+		.accordion_title{
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			span{
+				font-size: 24px;
+				line-height: 32px;
+				text-transform: uppercase;
+				color: #2C3E50;
+				font-family: "RobotoMono-Bold";
+				// text-indent: 40px;
+			}
+			img{
+				transition: transform 0.3s ease-out;
+			}
+		}
+		.accordion_content{
+			// margin-top: 10px;
+			font-size: 18px;
+			line-height: 24px;
+			color: #2C3E50;
+			// text-indent: 40px;
+			
+			overflow: hidden;
+			max-height: 35px;
+			transition: max-height 0.3s ease-out;
+
+			p{
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+			
+			// p{
+			// 	white-space: nowrap;
+			// 	overflow: hidden;
+			// 	text-overflow: ellipsis;
+			// 	display: none;
+			// }
+			// p:first-child{
+			// 	display: block;
+			// }
+		}
+	}
+	.accordion_item.active{
+		.accordion_title{
+			img{
+				transform: rotate(180deg);
+			}
+		}
+	}
 }
