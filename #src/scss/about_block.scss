@@ -1,13 +1,13 @@
-.info-comand-about-container{
+.about_block_container{
 	margin-top: 100px;
-	// margin-bottom: 50px;
-	display: flex;
-	justify-content: space-between;
-
-	.info-comand-container{
+	.about_block_wrapper{
+		display: flex;
+		justify-content: space-between;
+	}
+	.about_block_content{
 		flex: 1;
 	}
-	.info-about-container{
+	.about_block_img{
 		flex: 1;
 	}
 	.info{

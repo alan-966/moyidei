@@ -10,7 +10,6 @@ footer{
 
 		.footer-column{
 			margin-top: 32px;
-			// background-color: red;
 			span{
 				font-size: 24px;
 				line-height: 32px;
@@ -24,6 +23,9 @@ footer{
 					width: 52px;
 					height: 52px;
 				}
+				img:hover{
+					filter: brightness(80%);
+				}
 			}
 			.footer-menu{
 				li{
@@ -34,7 +36,6 @@ footer{
 						line-height: 32px
 					}
 					a:hover{
-						// color: #FFBB73;
 						text-decoration: underline;
 					}
 				}

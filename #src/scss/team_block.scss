@@ -1,0 +1,23 @@
+.team_block_container{
+	margin-top: 100px;
+	.team_block_wrapper{
+		display: flex;
+		justify-content: space-between;
+	}
+	.team_block_content{
+		flex: 1;
+	}
+	.team_block_img{
+		flex: 1;
+	}
+	.info{
+		margin-top: 20px;
+		font-size: 18px;
+		line-height: 24px;
+		color: #2C3E50;
+		white-space: normal;
+	}
+	.more-btn{
+		margin-top: 15px;
+	}
+}
