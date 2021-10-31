@@ -12,7 +12,8 @@
 @import "default";
 
 //main
-@import "header";
+// @import "header";
+@import "header2";
 @import "slider";
 @import "news_block";
 @import "photogallery";
@@ -60,13 +61,13 @@ main{
 
 .title{
 	font-size: 32px;
-	font-family: "RobotoMono-Bold";
+	font-family: "Roboto-Bold";
 	color: #2980B9;
 }
 
 .subtitle{
 	font-size: 18px;
-	font-family: "RobotoMono-Bold";
+	font-family: "Roboto-Bold";
 	color: #2980B9;
 	text-transform: uppercase;
 }
