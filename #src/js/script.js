@@ -1,5 +1,9 @@
-@@include('accordion.js')
+window.addEventListener('load', () => {
+	@@include('pointer.js')
+	@@include('accordion.js')
+	@@include('alert.js')
+	@@include('popup.js')
+});
+
 @@include('slider.js')
-@@include('alert.js')
 @@include('webp.js')
-@@include('popup.js')
