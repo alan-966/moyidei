@@ -1,82 +1,85 @@
-header{
+// header{
+// 	position: relative;
+// }
+
+.header_content_wrapper{
 	position: relative;
 	background: #2C3E50;
 	background: linear-gradient(to right, #2980B9, #2C3E50);
 }
 
-.container{
+.header_menu_wrapper{
+	position: relative;
+	background: #66BDF5;
+}
+
+.header_container{
 	max-width: 1140px; // 1140px
 	margin: 0px auto;
-	display: flex;
-	align-items: flex-end;
+}
 
-	.header_logo{
-		height: 138px;
-		margin-bottom: -25px;
+.header_caption_wrapper{
+	display: flex;
+	justify-content: flex-end;
+	span{
+		margin-top: 12px;
+		color: #FFFFFF;
+		font-size: 18px;
+		line-height: 24px;
 	}
 }
 
-@import "header-media";
-
-.header_right{
-	width: 100%;
+.header_content{
+	margin-top: -5px;
+	flex: 1;
 	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-	// justify-content: flex-end;
-	// background-color: green;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header_logo{
+	height: 138px;
+}
+
+.header_title{
+	color: #FFFFFF;
+	text-align: center;
+	span{
+		font-size: 18px;
+		line-height: 24px;
+	}
+	h1{
+		margin-top: 3px;
+		font-size: 36px;
+		line-height: 42px;
+		font-family: "Roboto-Medium";
+	}
 }
 
 .info_block{
-	// width: 100%;
-	margin-top: 12px;
-	background: #2980B9;
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	// width: 50%;
-	padding: 10px 22px;
-	margin-bottom: 10px;
-	border-radius: 4px;
-
-	.info_block_left{
-		padding-right: 20px;
-		ul{
-			display: flex;
-			// background-color: gray;
-			margin-bottom: 3px;
-			justify-content: space-between;
-		}
-		span{
-			font-size: 18px;
-			line-height: 24px;
-			color: #FFFFFF;
-		}
+	flex-direction: column;
+	ul{
+		display: flex;
+		justify-content: space-between;
 	}
-
-	.info_block_right{
-		// background-color: green;
-		padding-left: 20px; 
-		a{
-			font-size: 24px;
-			line-height: 32px;
-			color: #FFFFFF;
-			// white-space: pre-wrap;
-		}
+	span,a{
+		margin-top: 5px;
+		font-size: 18px;
+		line-height: 24px;
+		color: #FFFFFF;
+		align-self: flex-end;
 	}
 }
 
 .header_nav{
-	width: 100%;
-	// background-color: green;
-	padding-left: 14px;
+	display: flex;
+	align-items: center;
+	height: 60px;
 	ul{
-		width: 100%;
+		flex: 1;
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
-		margin-bottom: 12px;
-		// background-color: red;
 	}
 	a{
 		text-transform: uppercase;
@@ -86,7 +89,6 @@ header{
 		color: #FFFFFF;
 	}
 	a:hover{
-		// color: #FFBB73;
 		text-decoration: underline;
 	}
 }
