@@ -1,9 +1,6 @@
 .about-container{
 	margin-top: 50px;
 	margin-bottom: 50px;
-	display: flex;
-	flex-direction: column;
-	
 	font-size: 24px;
 	line-height: 32px;
 	color: #2C3E50;
@@ -19,20 +16,16 @@
 				list-style-position: inside;
 			}
 		}
-		.block-with-img{
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-			p{
-				width: 50%;
-			}
-			.about-img-wrapper{
-				width: 50%;
-				.about-img{
-					height: 90%;
-					width: 90%;
-					border-radius: 20px;
-				}
+		.about-img-wrapper{
+			border-radius: 20px;
+			overflow: hidden;
+			height: 340px;
+			float: right;
+			margin: 20px;
+			.about-img{
+				height: 100%;
+				width: 100%;
+				object-fit: cover;
 			}
 		}
 	}
