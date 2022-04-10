@@ -3,7 +3,6 @@
 	margin-bottom: 50px;
 }
 .accordion_wrapper{
-	// margin-top: 20px;
 	.accordion_item{
 		margin-top: 20px;
 		padding: 10px 15px;
@@ -21,18 +20,15 @@
 				text-transform: uppercase;
 				color: #2C3E50;
 				font-family: "Roboto-Bold";
-				// text-indent: 40px;
 			}
 			img{
 				transition: transform 0.3s ease-out;
 			}
 		}
 		.accordion_content{
-			// margin-top: 10px;
 			font-size: 18px;
 			line-height: 24px;
 			color: #2C3E50;
-			// text-indent: 40px;
 			
 			overflow: hidden;
 			max-height: 35px;
