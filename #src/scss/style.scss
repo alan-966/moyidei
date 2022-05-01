@@ -8,6 +8,7 @@
 	}
 }
 
+@import "constants";
 @import "fonts";
 @import "default";
 
@@ -103,5 +104,3 @@ main{
 	height: 40px;
 	animation: donut-spin 1.2s linear infinite;
 }
-// <div class="donut"></div>
-

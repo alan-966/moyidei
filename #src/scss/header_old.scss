@@ -1,0 +1,147 @@
+// header{
+// 	position: relative;
+// }
+
+.header_content_wrapper{
+	position: relative;
+	background: #2C3E50;
+	background: linear-gradient(to right, #2980B9, #2C3E50);
+}
+
+.header_menu_wrapper{
+	position: relative;
+	background: #66BDF5;
+}
+
+.header_container{
+	max-width: 1140px; // 1140px
+	margin: 0px auto;
+}
+
+.header_caption_wrapper{
+	display: flex;
+	justify-content: flex-end;
+	span{
+		margin-top: 12px;
+		color: #FFFFFF;
+		font-size: 18px;
+		line-height: 24px;
+	}
+}
+
+.header_content{
+	margin-top: -5px;
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header_logo{
+	height: 138px;
+}
+
+.header_title{
+	color: #FFFFFF;
+	text-align: center;
+	span{
+		font-size: 18px;
+		line-height: 24px;
+	}
+	h1{
+		margin-top: 3px;
+		font-size: 36px;
+		line-height: 42px;
+		font-family: "Roboto-Medium";
+	}
+}
+
+.info_block{
+	display: flex;
+	flex-direction: column;
+	ul{
+		display: flex;
+		justify-content: space-between;
+	}
+	span,a{
+		margin-top: 5px;
+		font-size: 18px;
+		line-height: 24px;
+		color: #FFFFFF;
+		align-self: flex-end;
+	}
+}
+
+.header_nav{
+	.header_topmenu{
+		flex: 1;
+		display: flex;
+		justify-content: space-between;
+		height: 60px;
+
+		li{
+			height: 100%;
+			display: flex;
+			align-items: center;
+
+			text-transform: uppercase;
+			font-size: 24px;
+			font-family: "Roboto-Bold";
+			line-height: 32px;
+			color: #FFFFFF;
+		}
+
+		svg {
+			margin-left: 3px;
+			width: 20px;
+			height: 20px;
+			transform: rotate(270deg);
+			transition: all 0.3s ease;
+			color: #FFFFFF;
+		}
+
+		a{
+			flex: 1;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			color: #FFFFFF;
+			transition: all .2s ease;
+		}
+
+		a:hover{
+			color: #2C3E50;
+			transition: all .2s ease;
+		}
+
+		.header_submenu{
+			position: absolute;
+			background-color: #66BDF5;
+			background: linear-gradient(180deg, #66BDF5 0%, #2980B9 100%);
+			display: flex;
+			flex-direction: column;
+			top: 100%;
+			z-index: 2;
+			transform-origin: 0 0;
+			transform: scaleY(0);
+			transition: all .3s ease;
+
+			li a {
+				padding: 12px;
+				font-size: 18px;
+				line-height: 21px;
+			}
+		}
+
+		li:hover {
+			ul {
+				transform: scaleY(1);
+				transition: all .3s ease;
+			}
+			svg {
+				transform: rotate(90deg);
+				color: #2C3E50;
+			}
+		}
+	}
+}
