@@ -54,22 +54,21 @@ main{
 }
 
 .main-wrapper{
-	max-width: 1140px; // 1140px
+	max-width: 1140px;
 	width: 100%;
 	margin: 0px auto;
 }
 
 .title{
-	font-size: 32px;
+	font-size: $size2;
 	font-family: "Roboto-Bold";
-	color: #2980B9;
+	color: #2C3E50;
 }
 
 .subtitle{
-	font-size: 18px;
+	font-size: $size3;
 	font-family: "Roboto-Bold";
-	color: #2980B9;
-	text-transform: uppercase;
+	color: #2C3E50;
 }
 
 .btn{
@@ -77,7 +76,7 @@ main{
 	border-radius: 4px;
 	border: 1px solid #C4C4C4;
 	padding: 7px 38px;
-	font-size: 18px;
+	font-size: $size4;
 	color: #2C3E50;
 	transition: all .3s ease;
 }
@@ -85,6 +84,18 @@ main{
 .btn:hover{
 	border: 1px solid #2C3E50;
 	transition: all .3s ease;
+}
+
+.info {
+	margin-top: 15px;
+	font-size: $size4;
+	line-height: $lh3;
+	color: #2C3E50;
+	white-space: normal;
+}
+
+.first_article {
+	margin: 0;
 }
 
 @keyframes donut-spin {

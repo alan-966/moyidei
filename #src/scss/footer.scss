@@ -1,64 +1,99 @@
 footer{
 	position: relative;
-	background: #2C3E50;
+	background: $color1;
+}
 
-	.footer-container{
-		max-width: 1140px; // 1140px
-		margin: 0px auto;
-		display: flex;
-		justify-content: space-between;
+.footer-container{
+	max-width: 1140px;
+	margin: 0px auto;
+	display: flex;
+	justify-content: space-between;
 
-		.footer-column{
-			margin-top: 32px;
-			span{
-				font-size: 24px;
-				line-height: 32px;
-				color: #FFF;
-			}
-			.social-list{
-				margin-top: 8px;
+	.footer-column{
+		margin-top: 32px;
+		span{
+			// font-size: 24px;
+			font-size: $size2;
+			// line-height: 32px;
+			line-height: $lh2;
+			color: $color6;
+		}
+		.social-list{
+			margin-top: 8px;
+			display: flex;
+			justify-content: space-around;
+
+			a {
 				display: flex;
-				justify-content: space-between;
-				img{
-					width: 52px;
-					height: 52px;
-				}
-				img:hover{
-					filter: brightness(80%);
-				}
-			}
-			.footer-menu{
-				li{
-					margin-bottom: 25px;
-					a{
-						color: #FFF;
-						font-size: 24px;
-						line-height: 32px
-					}
-					a:hover{
-						text-decoration: underline;
-					}
+				padding: 5px;
+				color: $color6;
+
+				svg {
+					width: 30px;
+					height: 30px;
+					transition: all .3s ease;
+					.black-fill {color: $color1;}
 				}
 			}
-			.footer-btn{
-				display: inline-block;
-				border-radius: 4px;
-				font-size: 24px;
-				line-height: 32px;
-				color: #FFFFFF;
-				padding: 9px 36px;
-				background-color: #2980B9;
-				margin-top: 15px;
+
+			a:hover {
+				.vk_icon {
+					color: $colorVk;
+					transition: all .3s ease;
+				}
+				.youtube_icon {
+					color: $colorYoutube;
+					transition: all .3s ease;
+				}
+				.telegram_icon {
+					color: $colorTelegram;
+					transition: all .3s ease;
+				}
+				.black-fill {
+					color: $color6;
+					transition: all .3s ease;
+				}
 			}
-			.first-row{
-				display: flex;
-				flex-direction: column;
+		}
+		.footer-menu{
+			li{
+				margin-bottom: 25px;
+				a{
+					color: $color6;
+					font-size: $size2;
+					line-height: $lh2;
+				}
+				a:hover{
+					text-decoration: underline;
+				}
 			}
-			.second-row{
-				display: flex;
-				flex-direction: column;
-				margin-top: 36px;
-			}
+		}
+		.footer-btn{
+			display: inline-block;
+			border-radius: 4px;
+			font-size: $size2;
+			line-height: $lh2;
+			color: $color1;
+			padding: 9px 36px;
+			background-color: $color6;
+			margin-top: 15px;
+			transition: all .3s ease;
+		}
+
+		.footer-btn:hover {
+			background-color: $color5;
+			color: $color6;
+			transition: all .3s ease;
+		}
+
+		.first-row{
+			display: flex;
+			flex-direction: column;
+		}
+		.second-row{
+			display: flex;
+			flex-direction: column;
+			margin-top: 36px;
 		}
 	}
 }

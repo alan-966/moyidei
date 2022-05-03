@@ -11,7 +11,7 @@ const images = [
 	'/img/pointer/10.png',
 ];
 
-const teamBlockImg = document.querySelector('.team_block_img');
+const teamBlockImg = document.querySelector('.team_block_img_wrapper');
 const source = teamBlockImg.querySelector('source');
 const image = teamBlockImg.querySelector('img');
 
