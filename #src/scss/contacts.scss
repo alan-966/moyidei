@@ -5,9 +5,9 @@
 	flex-direction: column;
 	span{
 		margin-top: 20px;
-		font-size: 24px;
+		font-size: $size3;
+		line-height: $lh3;
 		color: #2C3E50;
-		line-height: 32px;
 	}
 	.map-wrapper{
 		margin-top: 20px;

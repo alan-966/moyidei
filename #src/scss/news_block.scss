@@ -39,8 +39,8 @@
 			flex-direction: column;
 			flex: 1;
 			.post-title{
-				font-size: 18px;
-				line-height: 24px;
+				font-size: $size3;
+				line-height: $lh3;
 				font-family: "Roboto-Bold";
 				color: #2C3E50;
 				text-transform: uppercase;
@@ -56,17 +56,17 @@
 				justify-content: flex-end;
 				align-items: flex-end;
 				.post-description{
-					font-size: 18px;
-					line-height: 24px;
+					font-size: $size4;
+					line-height: $lh4;
 					color: #2C3E50;
 					display: -webkit-box;
-					-webkit-line-clamp: 4;
+					-webkit-line-clamp: 5;
 					-webkit-box-orient: vertical;
 					overflow: hidden;
 				}
 				.post-date{
-					font-size: 18px;
-					line-height: 24px;
+					font-size: $size4;
+					line-height: $lh4;
 					color: #2C3E50;
 					padding-top: 20px
 				}

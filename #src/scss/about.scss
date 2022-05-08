@@ -1,17 +1,17 @@
 .about-container{
 	margin-top: 50px;
 	margin-bottom: 50px;
-	font-size: 24px;
-	line-height: 32px;
+	font-size: $size4;
+	line-height: $lh4;
 	color: #2C3E50;
 	.about-content{
 		margin-top: 20px;
 		p{
-			text-indent: 60px;
+			text-indent: 40px;
 		}
 		ul{
 			li{
-				text-indent: 60px;
+				text-indent: 40px;
 				list-style: disc;
 				list-style-position: inside;
 			}

@@ -15,7 +15,6 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		// border: 2px dashed red;
 		.photo_category_wrapper{
 			height: 262px;
 			width: 100%;
@@ -29,8 +28,8 @@
 		}
 		.category_caption{
 			margin-top: 15px;
-			font-size: 24px;
-			line-height: 32px;
+			font-size: $size3;
+			line-height: $lh3;
 			color: #2C3E50;
 		}
 	}

@@ -15,23 +15,23 @@
 			align-items: center;
 			justify-content: space-between;
 			span{
-				font-size: 24px;
-				line-height: 32px;
+				font-size: $size3;
+				line-height: $lh3;
 				text-transform: uppercase;
 				color: #2C3E50;
 				font-family: "Roboto-Bold";
 			}
 			img{
+				width: 20px;
 				transition: transform 0.3s ease-out;
 			}
 		}
 		.accordion_content{
-			font-size: 18px;
-			line-height: 24px;
+			font-size: $size4;
+			line-height: $lh4;
 			color: #2C3E50;
-			
 			overflow: hidden;
-			max-height: 35px;
+			max-height: 30px;
 			transition: max-height 0.3s ease-out;
 
 			p{

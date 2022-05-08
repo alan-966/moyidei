@@ -68,6 +68,10 @@
 			color: $color6;
 		}
 
+		a:hover{
+			text-decoration: underline;
+		}
+
 		ul {
 			display: flex;
 			justify-content: space-around;
@@ -133,6 +137,7 @@
 		a {
 			padding: 12px;
 			display: flex;
+			align-items: center;
 			color: $color6;
 			transition: all .2s ease;
 		}

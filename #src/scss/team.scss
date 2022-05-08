@@ -7,7 +7,6 @@
 		grid-template-columns: repeat(3, 1fr);
 		grid-gap: 30px;
 		.team-grid-item{
-			// border: 2px dashed red;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -22,16 +21,16 @@
 			.member-name{
 				margin-top: 10px;
 				font-weight: bold;
-				font-size: 24px;
-				line-height: 32px;
+				font-size: $size3;
+				line-height: $lh3;
 				text-transform: uppercase;
 				color: #2C3E50;
 			}
 			.member-discription{
 				margin-top: 5px;
 				text-align: center;
-				font-size: 18px;
-				line-height: 24px;
+				font-size: $size4;
+				line-height: $lh4;
 				color: #2C3E50;
 			}
 		}
