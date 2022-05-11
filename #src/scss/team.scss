@@ -1,37 +1,31 @@
-.team-container{
+.team-container {
 	margin-top: 50px;
 	margin-bottom: 50px;
-	.team-grid{
+
+	.team-grid {
 		margin-top: 20px;
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		grid-gap: 30px;
-		.team-grid-item{
+
+		.team-grid-item {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			.team-photo-wrapper{
+
+			.team-photo-wrapper {
 				height: 383px;
-				.team-photo{
+
+				.team-photo {
 					object-fit: cover;
 					height: 100%;
 					width: 100%;
 				}
 			}
-			.member-name{
+
+			.member-name {
 				margin-top: 10px;
-				font-weight: bold;
-				font-size: $size3;
-				line-height: $lh3;
 				text-transform: uppercase;
-				color: #2C3E50;
-			}
-			.member-discription{
-				margin-top: 5px;
-				text-align: center;
-				font-size: $size4;
-				line-height: $lh4;
-				color: #2C3E50;
 			}
 		}
 	}

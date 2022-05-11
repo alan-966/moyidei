@@ -1,24 +1,29 @@
-.photogallery-container{
+.photogallery-container {
 	margin-top: 100px;
 }
-.photogallery_title{
+
+.photogallery_title {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
 }
-.photo_categories{
+
+.photo_categories {
 	margin-top: 20px;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-gap: 30px;
-	.category_group{
+
+	.category_group {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		.photo_category_wrapper{
+
+		.photo_category_wrapper {
 			height: 262px;
 			width: 100%;
-			.photo_category_img{
+
+			.photo_category_img {
 				width: 100%;
 				height: 100%;
 				object-fit: cover;

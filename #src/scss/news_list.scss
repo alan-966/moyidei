@@ -1,16 +1,16 @@
-.news-list-container{
+.news-list-container {
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
 
-.news-list-content{
+.news-list-content {
 	margin-top: 20px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-.news-list-item{
+.news-list-item {
 	margin-bottom: 20px;
 	display: flex;
 	border-radius: 20px;
@@ -20,11 +20,13 @@
 	gap: 15px;
 	height: 255px;
 	transition: all .3s ease;
-	.news-list-img-wrapper{
+
+	.news-list-img-wrapper {
 		flex: 1;
 		border-radius: 20px;
 		overflow: hidden;
-		.news-list-img{
+
+		.news-list-img {
 			height: 100%;
 			width: 100%;
 			object-fit: cover;
@@ -33,22 +35,24 @@
 	}
 }
 
-.news-list-item:hover{
-	.news-list-img-wrapper{
-		.news-list-img{
+.news-list-item:hover {
+	box-shadow: 0px 0px 6px 0px rgba(44, 62, 80, 0.7);
+	transition: all .3s ease;
+
+	.news-list-img-wrapper {
+		.news-list-img {
 			transform: scale(1.1, 1.1);
 			transition: all .3s ease;
 		}
 	}
-	box-shadow: 0px 2px 10px 0px rgba(44, 62, 80, 0.75);
-	transition: all .3s ease;
 }
 
-.news-list-post{
+.news-list-post {
 	display: flex;
 	flex-direction: column;
 	flex: 2;
-	.post-title{
+
+	.post-title {
 		font-size: $size3;
 		line-height: $lh3;
 		font-family: "Roboto-Bold";
@@ -59,13 +63,15 @@
 		-webkit-box-orient: vertical;
 		overflow: hidden;
 	}
-	.post-content-wrapper{
+
+	.post-content-wrapper {
 		flex: 1;
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
 		align-items: flex-end;
-		.post-content{
+
+		.post-content {
 			font-size: $size4;
 			line-height: $lh4;
 			color: #2C3E50;
@@ -74,11 +80,12 @@
 			-webkit-box-orient: vertical;
 			overflow: hidden;
 		}
-		.post-date{
+
+		.post-date {
 			font-size: $size4;
 			line-height: $lh4;
 			color: #2C3E50;
-			padding-top: 20px
+			padding-top: 20px;
 		}
 	}
 }
