@@ -1,27 +1,34 @@
 .about_block_container {
 	margin-top: 100px;
+
 	.about_block_wrapper {
 		display: flex;
 		padding-top: 20px;
 		overflow: hidden;
-		// height: 400px;
 	}
+
 	.about_block_content {
 		margin-left: 15px;
 		flex: 1;
 	}
+
 	.about_block_img_wrapper {
-		max-height: 300px;
+		position: relative;
 		margin-right: 15px;
 		flex: 1;
-		border-radius: 20px;
 		overflow: hidden;
+
 		.about_block_img {
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
+			border-radius: 20px;
+			position: absolute;
+			left: 0;
+			top: 0;
 		}
 	}
+
 	.more-btn {
 		margin-top: 15px;
 	}
