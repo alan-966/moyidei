@@ -56,7 +56,8 @@ main {
 }
 
 .main-wrapper {
-	max-width: 1140px;
+	max-width: 1164px;	// 1140 + 24
+	padding: 0 12px;
 	width: 100%;
 	margin: 0px auto;
 }
