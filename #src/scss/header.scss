@@ -22,7 +22,7 @@
 	padding: 5px 0;
 
 	.main_logo_wrapper {
-		margin-left: -50px;
+		margin-left: -40px;
 		height: 90px;
 		img {width: 100%; height: 100%; object-fit: contain;}
 	}
@@ -36,17 +36,23 @@
 			font-size: $size2;
 			line-height: $lh2;
 			font-family: "Roboto-Medium";
-			margin-bottom: 20px;
+		}
+
+		.main_logo_wrapper {
+			display: none;
+			margin-top: 5px;
+			margin-left: 0;
 		}
 
 		span {
 			display: block;
 			font-size: $size3;
 			line-height: $lh3;
-			margin-bottom: 3px;
+			margin-top: 20px;
 		}
 
 		h2 {
+			margin-top: 3px;
 			font-size: $size1;
 			line-height: $lh1;
 			font-family: "Roboto-Medium";
@@ -111,7 +117,16 @@
 				}
 			}
 		}
+	}
 
+	.header_burger {
+		display: none;
+		align-self: flex-start;
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 10px;
+		cursor: pointer;
 	}
 }
 
@@ -215,3 +230,5 @@
 		}
 	}
 }
+
+@import "header-media";
