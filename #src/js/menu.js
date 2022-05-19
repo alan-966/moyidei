@@ -1,12 +1,14 @@
-const linkWithSub = document.getElementsByClassName('has_sub');
+const mobileMenu = document.querySelector('.mobile_menu_wrapper');
+const body = document.querySelector('body');
 
-for (let i = 0; i < linkWithSub.length; i++)
+const linksWithSub = document.getElementsByClassName('has_sub');
+for (let i = 0; i < linksWithSub.length; i++)
 {
-	linkWithSub[i].addEventListener('click', function(e) {
+	linksWithSub[i].addEventListener('click', function(e) {
 		e.preventDefault();
 		e.stopPropagation();
 
-		const currentItem = linkWithSub[i].parentNode;
+		const currentItem = linksWithSub[i].parentNode;
 
 		const activeItems = document.getElementsByClassName('active_mobile_item');
 		for (let j = 0; j < activeItems.length; j++)
@@ -26,13 +28,20 @@ window.onclick = function(e) {
 	{
 		activeItems[i].classList.remove('active_mobile_item');
 	}
+	mobileMenu.classList.remove('active');
+	body.classList.remove('lock');
 }
 
-const burgerBtn = document.getElementsByClassName('header_burger');
-if (burgerBtn.length)
+const burgerBtns = document.getElementsByClassName('header_burger');
+for (let i = 0; i < burgerBtns.length; i++)
 {
-	burgerBtn[0].addEventListener('click', function(e) {
-		const menu = document.getElementsByClassName('header_menu_wrapper');
-		if (menu.length) menu[0].classList.toggle('active');
+	burgerBtns[i].addEventListener('click', function(e) {
+		e.stopPropagation();
+		mobileMenu.classList.toggle('active');
+		body.classList.toggle('lock');
 	})
 }
+
+mobileMenu.addEventListener('click', function(e) {
+	e.stopPropagation();
+});
