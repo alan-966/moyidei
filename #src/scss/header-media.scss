@@ -30,25 +30,26 @@
 
 		.header_title {
 			h3 {
-				font-size: $size4; // 2
-				line-height: $lh4;
+				font-size: $size5; // 2
+				line-height: $lh5;
 				font-family: "Roboto-Regular";
 				padding: 0 50px;
 			}
 
 			.main_logo_wrapper {
 				display: block;
-				height: 80px;
+				height: 70px;
 			}
 
 			span {
-				font-size: $size4; // 3
-				line-height: $lh4;
+				font-size: $size5; // 3
+				line-height: $lh5;
 			}
 
 			h2 {
-				font-size: $size3; // 1
-				line-height: $lh3;
+				font-size: $size2; // 1
+				line-height: $lh2;
+				text-transform: uppercase;
 			}
 		}
 

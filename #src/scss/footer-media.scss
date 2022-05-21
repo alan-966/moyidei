@@ -1,0 +1,33 @@
+@media (max-width:1200px){
+	.footer-container {
+		max-width: 994px; // 970 + 24
+	}
+}
+
+// @media (max-width:992px){
+// 	.header_container {
+// 		max-width: 774px; // 750 + 24
+// 	}
+// }
+
+@media (max-width:767px) {
+	.footer-container {
+		max-width: none;
+
+		.footer-column {
+			min-width: 240px;
+
+			.footer-menu {
+				text-align: center;
+			}
+
+			span,
+			a,
+			.footer-menu li a,
+			.footer-btn {
+				font-size: $size3;
+				line-height: $lh3;
+			}
+		}
+	}
+}

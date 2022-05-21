@@ -1,7 +1,6 @@
 .header_content_wrapper {
 	position: relative;
 	background: $color1;
-	// background: linear-gradient(to right, $color1, $color2);
 	border-bottom: 5px solid $color4;
 }
 
@@ -131,6 +130,8 @@
 	.mobile_menu_wrapper {
 		background: $color2;
 		position: fixed;
+		overflow: auto;
+		padding: 15px 0;
 		top: 0;
 		right: -90%;
 		width: 90%;
@@ -142,7 +143,12 @@
 			display: flex;
 
 			ul {
-				justify-content: center;
+				max-width: 70%;
+
+				svg {
+					width: 30px; // 25px
+					height: 30px; // 25px
+				}
 			}
 		}
 

@@ -5,14 +5,17 @@ footer {
 
 .footer-container {
 	max-width: 1164px;	// 1140 + 24
-	padding: 0 12px;
 	margin: 0px auto;
+	padding-bottom: 30px;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 
 	.footer-column {
-		margin-top: 32px;
-
+		margin: 0 auto;
+		padding: 0 12px;
+		padding-top: 30px;
+		
 		span {
 			font-size: $size2;
 			line-height: $lh2;
@@ -71,11 +74,15 @@ footer {
 					text-decoration: underline;
 				}
 			}
+			li:last-child {
+				margin-bottom: 0;
+			}
 		}
 
 		.footer-btn {
 			display: inline-block;
 			border-radius: 4px;
+			text-align: center;
 			font-size: $size2;
 			line-height: $lh2;
 			color: $color1;
@@ -99,7 +106,9 @@ footer {
 		.second-row {
 			display: flex;
 			flex-direction: column;
-			margin-top: 36px;
+			margin-top: 30px;
 		}
 	}
 }
+
+@import "footer-media";

@@ -21,7 +21,7 @@
 		overflow: hidden;
 		padding: 10px 15px;
 		gap: 15px;
-		height: 255px;
+		max-height: 255px;
 		transition: all .3s ease;
 
 		.post-img-wrapper {
@@ -66,6 +66,7 @@
 					font-size: $size4;
 					line-height: $lh4;
 					color: #2C3E50;
+					padding-top: 10px;
 					display: -webkit-box;
 					-webkit-line-clamp: 5;
 					-webkit-box-orient: vertical;
@@ -76,7 +77,7 @@
 					font-size: $size4;
 					line-height: $lh4;
 					color: #2C3E50;
-					padding-top: 20px
+					padding-top: 20px;
 				}
 			}
 		}
@@ -104,3 +105,5 @@
 		}
 	}
 }
+
+@import "news_block-media";

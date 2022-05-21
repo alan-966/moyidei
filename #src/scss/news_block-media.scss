@@ -1,0 +1,39 @@
+// @media (max-width:1200px){
+	
+// }
+
+// @media (max-width:992px){
+	
+// }
+
+@media (max-width:767px) {
+	.news-block-content {
+		grid-template-columns: repeat(2, 1fr);
+
+		.post:nth-child(1),
+		.post:nth-child(4) {
+			grid-column: span 2;
+
+			.post-img-wrapper{display: inline;}
+		}
+
+		.post .post-content {
+			flex: 2;
+		}
+	}
+}
+
+// крайне редко используемый медиазапрос
+@media (max-width:500px) {
+	.news-block-content {
+		grid-template-columns: repeat(1, 1fr);
+
+		.post:nth-child(1),
+		.post:nth-child(2),
+		.post:nth-child(3),
+		.post:nth-child(4) {
+			grid-column: span 1;
+			.post-img-wrapper{display: none;}
+		}
+	}
+}
