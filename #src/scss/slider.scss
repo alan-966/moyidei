@@ -6,7 +6,16 @@
 	margin-top: 50px;
 	border-radius: 20px;
 
-	.swiper-button-prev {
+	.swiper-slide {
+		background-color: $color3;
+		img {
+			object-fit: contain;
+			height: 100%;
+			width: 100%;
+		}
+	}
+
+	.swiper-button-prev, .swiper-button-next {
 		color: $color7;
 		background-color: $color6;
 		width: 40px;
@@ -14,19 +23,7 @@
 		border-radius: 40px;
 	}
 
-	.swiper-button-prev:after {
-		font-size: $size4;
-	}
-
-	.swiper-button-next {
-		color: $color7;
-		background-color: $color6;
-		width: 40px;
-		height: 40px;
-		border-radius: 40px;
-	}
-
-	.swiper-button-next:after {
+	.swiper-button-prev:after, .swiper-button-next:after {
 		font-size: $size4;
 	}
 
@@ -34,3 +31,5 @@
 		background-color: $color6;
 	}
 }
+
+@import "slider-media";

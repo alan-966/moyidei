@@ -4,11 +4,11 @@
 	}
 }
 
-// @media (max-width:992px){
-// 	.header_container {
-// 		max-width: 774px; // 750 + 24
-// 	}
-// }
+@media (max-width:992px){
+	// .header_container {
+	// 	max-width: 774px; // 750 + 24
+	// }
+}
 
 @media (max-width:767px) {
 	.footer-container {
@@ -25,7 +25,7 @@
 			a,
 			.footer-menu li a,
 			.footer-btn {
-				font-size: $size3;
+				font-size: $size3; // 2
 				line-height: $lh3;
 			}
 		}
