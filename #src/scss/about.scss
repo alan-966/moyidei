@@ -1,8 +1,10 @@
-.about-container{
+.about-container {
 	margin-top: 50px;
 	margin-bottom: 50px;
-	.about-content{
+
+	.about-content {
 		margin-top: 20px;
+
 		p {
 			text-indent: 40px;
 		}
@@ -14,13 +16,14 @@
 			list-style-position: inside;
 		}
 
-		.about-img-wrapper{
+		.about-img-wrapper {
 			border-radius: 20px;
 			overflow: hidden;
 			height: 340px;
 			float: right;
 			margin: 20px;
-			.about-img{
+
+			.about-img {
 				height: 100%;
 				width: 100%;
 				object-fit: cover;
@@ -28,3 +31,5 @@
 		}
 	}
 }
+
+@import "about-media";

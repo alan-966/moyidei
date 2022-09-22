@@ -1,0 +1,36 @@
+// @media (max-width:1200px){
+	
+// }
+
+// @media (max-width:992px){
+	
+// }
+
+@media (max-width:767px) {
+	.news-list-item {
+		max-height: 205px;
+		.news-list-img-wrapper {
+			display: none;
+		}
+	}
+
+	.news-list-post {
+		.post-title {
+			font-size: $size4; // 3
+			line-height: $lh4;
+		}
+
+		.post-content-wrapper {
+			.post-content {
+				font-size: $size5; // 4
+				line-height: $lh5;
+			}
+
+			.post-date {
+				font-size: $size5; // 4
+				line-height: $lh5;
+				padding-top: 10px; // 20
+			}
+		}
+	}
+}

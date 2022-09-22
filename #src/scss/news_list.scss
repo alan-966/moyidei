@@ -18,7 +18,7 @@
 	overflow: hidden;
 	padding: 10px 15px;
 	gap: 15px;
-	height: 255px;
+	max-height: 255px;
 	transition: all .3s ease;
 
 	.news-list-img-wrapper {
@@ -72,6 +72,7 @@
 		align-items: flex-end;
 
 		.post-content {
+			padding-top: 10px;
 			font-size: $size4;
 			line-height: $lh4;
 			color: #2C3E50;
@@ -89,3 +90,5 @@
 		}
 	}
 }
+
+@import "news_list-media";

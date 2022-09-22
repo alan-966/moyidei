@@ -1,0 +1,34 @@
+@media (max-width:1200px){
+
+}
+
+@media (max-width:992px){
+	
+}
+
+@media (max-width:767px) {
+	.about_block_container {
+		.about_block_wrapper {
+			flex-direction: column;
+		}
+
+		.about_block_content {
+			margin-left: 0px; // 15
+		}
+
+		.about_block_img_wrapper {
+			margin-bottom: 10px;
+			height: 255px;
+			position: static;
+			margin-right: 0px; // 15
+			flex: none;
+
+			.about_block_img {
+				position: static;
+				height: 100%;
+				width: 100%;
+				object-fit: contain;
+			}
+		}
+	}
+}
