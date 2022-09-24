@@ -19,15 +19,11 @@
 		.about_block_img_wrapper {
 			margin-bottom: 10px;
 			height: 255px;
-			position: static;
 			margin-right: 0px; // 15
 			flex: none;
 
 			.about_block_img {
-				position: static;
-				height: 100%;
-				width: 100%;
-				object-fit: contain;
+				
 			}
 		}
 	}

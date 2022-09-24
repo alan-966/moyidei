@@ -19,13 +19,19 @@
 		overflow: hidden;
 
 		.team_block_img {
+			opacity: 0;
 			max-width: 100%;
+			width: 100%;
 			height: 100%;
 			object-fit: cover;
 			border-radius: 20px;
 			position: absolute;
 			left: 0;
 			top: 0;
+		}
+
+		.active_img {
+			opacity: 1;
 		}
 	}
 
