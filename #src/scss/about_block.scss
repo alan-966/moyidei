@@ -10,6 +10,10 @@
 	.about_block_content {
 		margin-left: 15px;
 		flex: 1;
+
+		p:first-child {
+			margin: 0;
+		}
 	}
 
 	.about_block_img_wrapper {
