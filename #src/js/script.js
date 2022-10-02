@@ -5,3 +5,4 @@ window.addEventListener('load', () => {
 });
 @@include('slider.js')
 @@include('webp.js')
+@@include('moreNews.js')
