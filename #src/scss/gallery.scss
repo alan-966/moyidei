@@ -1,6 +1,7 @@
 .gallery_categories_container {
 	margin-top: 50px;
 	margin-bottom: 50px;
+	position: relative;
 
 	.title_row {
 		display: flex;
@@ -10,6 +11,12 @@
 		.subtitle {
 			margin-left: 30px;
 		}
+	}
+
+	.btn {
+		position: absolute;
+		left: 50%;
+		top: 100%;
 	}
 
 	.gallery_grid {
