@@ -17,11 +17,12 @@ function loadMoreNews(e, page) {
 	})
 }
 
-function loadMoreAlbums(e, page) {
+let albumsPage = 2;
+function loadMoreAlbums(e, lastPage) {
 	e.preventDefault();
 
 	const formData = new FormData();
-	formData.append('page', page + 1);
+	formData.append('page', albumsPage);
 
 	fetch('/photogallery/', {
 		method: 'POST',
@@ -29,9 +30,12 @@ function loadMoreAlbums(e, page) {
 	})
 	.then(response => response.text())
 	.then(text => {
-		const btn = document.querySelector('.photo_categories .btn');
-		btn.remove();
-		const newsList = document.querySelector('.photo_categories');
-		newsList.insertAdjacentHTML('beforeend', text);
+		if (lastPage === albumsPage) {
+			const btn = document.querySelector('.gallery_categories_container .btn');
+			btn.remove();
+		}
+		albumsPage = albumsPage + 1;
+		const albumsList = document.querySelector('.photo_categories');
+		albumsList.insertAdjacentHTML('beforeend', text);
 	})
 }
