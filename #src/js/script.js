@@ -3,6 +3,7 @@ window.addEventListener('load', () => {
 	@@include('pointer.js')
 	@@include('accordion.js')
 });
+@@include('popup.js')
 @@include('slider.js')
 @@include('webp.js')
 @@include('showMore.js')

@@ -36,7 +36,21 @@
 			</div>
 			<div class="second-row">
 				<span>Есть предложения?</span>
-				<a class="footer-btn" href="#">Оставить обращение</a>
+				<a class="footer-btn popup-link" href="#review-popup">Оставить обращение</a>
+			</div>
+		</div>
+	</div>
+	<div id="review-popup" class="popup">
+		<div class="popup__body">
+			<div class="popup__content">
+				<div class="popup__close"></div>
+				<h3 class="title">Есть вопрос?</h3>
+				<form>
+					<input type="text" name="firstName" autofocus placeholder="Имя">
+					<input type="text" name="phone" placeholder="Телефон">
+					<textarea name="message" rows="5" placeholder="Сообщение"></textarea>
+					<input class="btn" type="button" value="Отправить">
+				</form>
 			</div>
 		</div>
 	</div>
