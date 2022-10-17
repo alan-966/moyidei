@@ -1,0 +1,21 @@
+@media (max-width:1200px){
+	.popup__content form {
+		input, textarea {
+			margin-top: 15px; // 20
+		}
+	}
+}
+
+// @media (max-width:992px){
+	
+// }
+
+@media (max-width:767px) {
+	.popup__content form {
+		input, textarea {
+			font-size: $size5; // 4
+			line-height: $lh5; // 4
+			padding: 18px 15px; // 20 16
+		}
+	}
+}

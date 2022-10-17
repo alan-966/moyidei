@@ -4,6 +4,7 @@ window.addEventListener('load', () => {
 	@@include('accordion.js')
 });
 @@include('popup.js')
+@@include('maskedInput.js')
 @@include('slider.js')
 @@include('webp.js')
 @@include('showMore.js')
