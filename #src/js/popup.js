@@ -88,3 +88,47 @@ document.addEventListener('keydown', function (e) {
 		popupClose(popupActive);
 	}
 });
+
+const inputs = document.querySelectorAll('form input,textarea');
+if (inputs.length > 0) {
+	for (let index = 0; index < inputs.length; index++) {
+		const input = inputs[index];
+		input.addEventListener('input', function (e) {
+			e.target.classList.remove('error');
+			const errorEl = e.target.nextElementSibling;
+			if (errorEl.tagName === 'SPAN') {
+				errorEl.remove();
+			}
+		});
+	}
+}
+
+function sendFeedback(e) {
+	e.preventDefault();
+	const formElement = document.querySelector('.feedback_form');
+	const formData = new FormData(formElement);
+
+	fetch('/feedback/', {
+		method: 'POST',
+		body: formData,
+	})
+	.then(response => response.json())
+	.then(json => {
+		formElement.querySelectorAll('span.error').forEach(el => el.remove());
+
+		if (json.success) {
+			window.location.reload();
+			return;
+		}
+
+		for (key in json) {
+			formElement[key].classList.add('error');
+			if (json[key].length) {
+				const errorSpan = document.createElement('span');
+				errorSpan.className = 'error';
+				errorSpan.innerHTML = json[key][0].message;
+				formElement[key].insertAdjacentElement('afterEnd', errorSpan);
+			}
+		}
+	});
+}
