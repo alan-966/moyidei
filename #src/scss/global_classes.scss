@@ -5,6 +5,10 @@
 	margin: 0px auto;
 }
 
+main>div:last-child {
+	margin-bottom: 50px;
+}
+
 .title {
 	font-size: $size2;
 	font-family: "Roboto-Bold";

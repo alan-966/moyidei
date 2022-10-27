@@ -1,20 +1,23 @@
-.contacts-container{
+.contacts-container {
 	margin-top: 50px;
-	margin-bottom: 50px;
 	display: flex;
 	flex-direction: column;
-	span{
+
+	span {
 		margin-top: 20px;
 		font-size: $size3;
 		line-height: $lh3;
 		color: #2C3E50;
 	}
-	.map-wrapper{
+
+	.map-wrapper {
 		margin-top: 20px;
 	}
-	.adress-img-wrapper{
+
+	.adress-img-wrapper {
 		margin-top: 20px;
-		.adress-img{
+
+		.adress-img {
 			height: 290px;
 			width: 100%;
 			border-radius: 20px;
